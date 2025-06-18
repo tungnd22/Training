@@ -1,0 +1,5 @@
+# Ignore intermediate files, assembly files, object files
+*.[iso]
+
+# Ignore executable files
+practice
