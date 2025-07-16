@@ -12,9 +12,3 @@ lam on lam phuoc
 !!!
 500000
 !!!
-500000
-!!!
-lam on lam phuoc
-lam on lam phuoc
-!!!
-!!!
