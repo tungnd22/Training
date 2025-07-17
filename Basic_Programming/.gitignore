@@ -2,7 +2,7 @@
 *.[iso]
 
 # Ignore executable files
-practice
+final_program
 
 # Ignore output text file
 output.txt

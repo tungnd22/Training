@@ -1,11 +1,17 @@
-practice: practice.o
-	gcc practice.o -o practice			# Linking
+CC := gcc
+CFLAGS := -Wall -O2 -g
 
-practice.o: practice.s
-	gcc -c practice.s -o practice.o		# Assembly
+TARGET := final_program
 
-practice.s: practice.i
-	gcc -S practice.i -o practice.s		# Compilation
+SRC_DIR := ./src
+BUILD_DIR := ./build
 
-practice.i: practice.c
-	gcc -E practice.c -o practice.i		# Preprocessing
+SRCS := $(wildcard $(SRC_DIR)/*.c)
+OBJS := $(SRCS:%.o=$(BUILD_DIR)/%.o)
+
+$(BUILD_DIR)/$(TARGET): $(OBJS)
+	mkdir -p $(BUILD_DIR)
+	$(CC) $(CFLAGS) -Iinclude $^ -o $@
+
+clean:
+	rm -rf $(BUILD_DIR)/*.o $(BUILD_DIR)/$(TARGET)
