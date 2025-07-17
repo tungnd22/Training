@@ -23,11 +23,7 @@
 #include <string.h>
 #include "../include/worker.h"
 
-<<<<<<< HEAD
 #define MAX_PPL 100
-=======
-#define MAX_PEO 100
->>>>>>> testing1
 
 // typedef union income_t
 // {
