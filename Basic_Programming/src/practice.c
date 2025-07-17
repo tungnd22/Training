@@ -23,7 +23,7 @@
 #include <string.h>
 #include "../include/worker.h"
 
-#define MAX_PEOPLE 100
+#define MAX_PPL 100
 
 // typedef union income_t
 // {
@@ -54,7 +54,7 @@
 int main()
 {
     int number_people;
-    someone_t people[MAX_PEOPLE];
+    someone_t people[MAX_PPL];
 
 
     printf("Nhap so nguoi: ");
